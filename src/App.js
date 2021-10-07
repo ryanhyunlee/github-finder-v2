@@ -1,9 +1,14 @@
 import "./App.scss";
 
+import Navbar from "./components/layout/navbar/Navbar";
+
 const App = () => {
   return (
     <div>
-      <h2>App</h2>
+      <Navbar />
+      <div className='container'>
+        <p>Whatever goes here</p>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  color: #eee;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(14, 156, 212);
+
+  & .navbar-items {
+    display: flex;
+
+    & .navbar-item {
+      display: flex;
+      padding: 0 2rem;
+
+      & a {
+        text-decoration: none;
+        color: #eee;
+      }
+    }
+
+    & .navbar-item a:hover {
+      color: #fff;
+    }
+  }
+}
+
+// Media query
+@media screen and(max-width: "800px") {
+  .navbar {
+    padding: 1rem;
+
+    .logo {
+      font-size: 20px;
+    }
+
+    & .navbar-items .navbar-item {
+      padding: 0 1rem;
+    }
+  }
+}
