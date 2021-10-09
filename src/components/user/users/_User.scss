@@ -1,0 +1,48 @@
+.user {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 20px;
+
+  .avatar {
+    width: 150px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .login {
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .btn-dark {
+    background-color: rgb(78, 69, 69);
+    &:hover {
+      background-color: rgb(116, 103, 103);
+    }
+  }
+}
+
+// Media Query
+@media screen and(max-width: '900px') {
+  .user {
+    min-width: 300px;
+    width: 60%;
+  }
+}

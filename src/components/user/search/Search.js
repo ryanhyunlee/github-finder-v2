@@ -5,21 +5,24 @@ import Alert from "../alert/Alert";
 const Search = () => {
   const [text, setText] = useState("");
   const githubContext = useContext(GithubContext);
+  const { setAlert } = githubContext;
 
   const onChange = (e) => {
     setText(e.target.value);
   };
 
+  // Handles setting alert and search users
   const onSubmit = (e) => {
     e.preventDefault();
-    if (text == "") {
-      githubContext.setAlert("Please enter username");
+    if (text === "") {
+      setAlert("Please enter username");
       setTimeout(() => {
-        githubContext.setAlert(null);
+        setAlert(null);
       }, 3000);
     } else {
-      githubContext.setAlert(null);
+      setAlert(null);
       githubContext.searchUsers(text);
+      setText("");
     }
   };
 

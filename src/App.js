@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GithubState from "./context/github/GithubState";
 
 import Navbar from "./components/layout/navbar/Navbar";
-import Search from "./components/user/search/Search";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
 
 const App = () => {
   return (
@@ -11,7 +12,10 @@ const App = () => {
       <Router>
         <Navbar />
         <div className='container'>
-          <Search />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+          </Switch>
         </div>
       </Router>
     </GithubState>

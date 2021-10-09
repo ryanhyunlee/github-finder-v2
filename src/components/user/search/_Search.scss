@@ -1,5 +1,5 @@
 .search {
-  height: 90vh;
+  height: 10vh;
   width: 100%;
 
   .form {
@@ -22,5 +22,12 @@
     .search-bar:focus {
       outline: none;
     }
+  }
+}
+
+// Media Query
+@media screen and(max-width: '900px') {
+  .search .form .search-bar {
+    width: 100%;
   }
 }
