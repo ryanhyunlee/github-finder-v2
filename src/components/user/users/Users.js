@@ -10,7 +10,7 @@ const Users = () => {
       {githubContext.users.length > 0 ? (
         <i
           onClick={() => githubContext.clearUsers()}
-          class='fas fa-user-times clear-users'
+          className='fas fa-user-times clear-users'
         ></i>
       ) : null}
       <div className='users'>

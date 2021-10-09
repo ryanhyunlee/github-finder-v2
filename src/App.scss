@@ -1,10 +1,12 @@
-// Scss imports
+// Mixin imports
 @import "./components/layout/navbar/_Navbar";
 @import "./components/user/search/_Search";
 @import "./components/user/alert/Alert";
 @import "./components/user/users/Users";
 @import "./components/user/users/User";
+@import "./components/user/users/UserDetail";
 
+// Global style
 *,
 html,
 body {

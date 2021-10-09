@@ -5,6 +5,7 @@ import GithubState from "./context/github/GithubState";
 import Navbar from "./components/layout/navbar/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
+import UserDetail from "./components/user/users/UserDetail";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/user/:login' component={UserDetail} />
           </Switch>
         </div>
       </Router>

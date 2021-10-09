@@ -1,4 +1,10 @@
-import { CLEAR_USERS, SEARCH_USERS, SET_ALERT } from "../types";
+import {
+  CLEAR_USERS,
+  GET_REPOS,
+  GET_USER,
+  SEARCH_USERS,
+  SET_ALERT,
+} from "../types";
 
 export default (state, action) => {
   switch (action.type) {
@@ -6,6 +12,18 @@ export default (state, action) => {
       return {
         ...state,
         users: action.payload,
+      };
+
+    case GET_USER:
+      return {
+        ...state,
+        user: action.payload,
+      };
+
+    case GET_REPOS:
+      return {
+        ...state,
+        repos: action.payload,
       };
 
     case SET_ALERT:

@@ -1,0 +1,174 @@
+.user-detail {
+  height: 100%;
+  margin-top: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  .btn-back {
+    text-decoration: none;
+    color: rgb(14, 156, 212);
+    width: 150px;
+
+    &:hover {
+      color: rgb(105, 191, 224);
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .top {
+      margin-top: 2rem;
+
+      .avatar {
+        border-radius: 50%;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      hr {
+        border: 1px solid #eee;
+        margin: 2rem auto;
+        width: 50%;
+      }
+
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+
+    .bottom {
+      display: flex;
+
+      .left {
+        flex: 1;
+
+        h3 {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 90%;
+          border-radius: 10px;
+          text-decoration: none;
+          background-color: rgb(56, 52, 52);
+          color: #fff;
+          padding: 0.75rem;
+          text-align: center;
+        }
+
+        .btn-github {
+          background-color: rgb(56, 52, 52);
+          color: #fff;
+          margin-top: 1rem;
+
+          &:hover {
+            background-color: rgb(88, 82, 82);
+          }
+        }
+
+        .btn-website {
+          margin-top: 0.5rem;
+          background-color: rgb(51, 64, 241);
+          color: #fff;
+
+          &:hover {
+            background-color: rgb(98, 108, 245);
+          }
+        }
+
+        .card {
+          max-width: 400px;
+          padding: 1rem;
+          border: #ccc 1px dotted;
+          margin: 0.7rem auto;
+          border-radius: 10px;
+        }
+
+        .badge {
+          font-size: 0.8rem;
+          padding: 0.2rem 0.7rem;
+          text-align: center;
+          margin: 0.3rem;
+          background: var(--light-color);
+          color: #333;
+          border-radius: 5px;
+        }
+
+        .badge-primary {
+          background-color: rgb(180, 68, 68);
+          color: #fff;
+        }
+
+        .badge-success {
+          background-color: rgb(53, 102, 65);
+          color: #fff;
+        }
+
+        .badge-light {
+          background-color: rgb(122, 129, 124);
+          color: #fff;
+        }
+
+        .badge-dark {
+          background-color: rgb(56, 52, 52);
+          color: #fff;
+        }
+      }
+
+      .right {
+        flex: 1;
+
+        h3,
+        h4 {
+          text-align: center;
+        }
+
+        .repo {
+          padding: 1rem;
+          border: #ccc 1px dotted;
+          border-radius: 10px;
+          margin: 0.7rem 0;
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: rgb(14, 156, 212);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query
+@media screen and(max-width: '900px') {
+  .bottom {
+    flex-direction: column;
+
+    .btn {
+      width: 250px;
+    }
+
+    .right {
+      margin-top: 3rem;
+    }
+  }
+}
