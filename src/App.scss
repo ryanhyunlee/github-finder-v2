@@ -26,4 +26,16 @@ body {
     overflow: hidden;
     padding: 0 5rem;
   }
+
+  .about {
+    width: 90%;
+    margin-top: 100px;
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
 }

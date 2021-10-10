@@ -24,6 +24,7 @@ const UserDetail = () => {
 
   useEffect(() => {
     getRepos(login);
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -77,7 +78,7 @@ const UserDetail = () => {
           <div className='right'>
             <h3>Repositories</h3>
             {repos.map((repo) => (
-              <h4 className='repo'>
+              <h4 className='repo' key={repo.name}>
                 <a href={repo.html_url}>{repo.name}</a>
               </h4>
             ))}
